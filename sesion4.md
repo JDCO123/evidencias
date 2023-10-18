@@ -12,7 +12,7 @@
 - Crea una función llamada calculadora que tome tres argumentos: dos números y un operador (+, -, *, /). La función debe realizar la operación indicada en los dos números y devolver el resultado.
 
 **Ejemplo de uso:**
-```python
+```python:
 resultado = calculadora(5, 3, '+')  # Debe devolver 8
 ```
 
@@ -20,7 +20,7 @@ resultado = calculadora(5, 3, '+')  # Debe devolver 8
 - Crea una función llamada contar_vocales que tome una cadena como argumento y devuelva el número de vocales (a, e, i, o, u) que contiene la cadena.
 
 **Ejemplo de uso:**
-```python
+```python:
 num_vocales = contar_vocales("Hola, mundo!")  # Debe devolver 4
 ```
 
@@ -28,7 +28,7 @@ num_vocales = contar_vocales("Hola, mundo!")  # Debe devolver 4
 - Escribe una función llamada es_primo que tome un número entero positivo como argumento y determine si es un número primo (es decir, solo es divisible por 1 y por sí mismo). La función debe devolver True si es primo y False si no lo es.
 
 **Ejemplo de uso:**
-```python
+```python:
 resultado = es_primo(17)  # Debe devolver True
 ```
 
@@ -36,7 +36,7 @@ resultado = es_primo(17)  # Debe devolver True
 - Escribe una función llamada contar_palabras que tome una cadena como argumento y devuelva el número de palabras en esa cadena. Supón que las palabras están separadas por espacios.
 
 **Ejemplo de uso:**
-```python
+```python:
 num_palabras = contar_palabras("Hola, este es un ejemplo.")  # Debe devolver 5
 ```
 
@@ -44,14 +44,14 @@ num_palabras = contar_palabras("Hola, este es un ejemplo.")  # Debe devolver 5
 - Escribe una función llamada potencia que tome dos números enteros como argumentos, uno como base y otro como exponente, y devuelva el resultado de elevar la base al exponente.
 
 **Ejemplo de uso:**
-```python
+```python:
 resultado = potencia(2, 3)  # Debe devolver 8 (2^3 = 2 * 2 * 2)
 ```
 
 # Solución
 
 ### Ejercicio 1 (Calculadora Básica):
-```python
+```python:
 def calculadora(n1,n2,op):
     resultado = 0
     if op == '+':
@@ -73,7 +73,7 @@ print(x)
 ```
 
 ### Ejercicio 2 (Conteo de Vocales):
-```python
+```python:
 def contar_vocales(palabras):
     contador = 0
     palabras = palabras.lower()
@@ -89,7 +89,7 @@ print("Número de vocales:", resultado)
 ```
 
 ### Ejercio 3 (Primo o No Primo):
-```python
+```python:
 def es_primo(num):
     if num <= 1:
         return False
@@ -113,7 +113,7 @@ else:
 ```
 
 ### Ejercicio 4 (Contador de Palabras):
-```python
+```python:
 def contar_palabras(cadena):
     palabras = cadena.split()
     return len(palabras)
@@ -124,8 +124,8 @@ print("Número de palabras:", resultado)
 
 ```
 
-### Ejercicio 5 (Calculo de Potencio):
-```python
+### Ejercicio 5 (Calculo de Potencia):
+```python:
 def potencia(base, exponente):
     resultado = base ** exponente
     return resultado
